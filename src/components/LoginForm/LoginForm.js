@@ -1,4 +1,6 @@
 import logo from "../../images/logo.svg";
+import email from "../../images/email.svg";
+import lock from "../../images/lock.svg";
 
 const LoginForm = () => {
   return (
@@ -17,8 +19,33 @@ const LoginForm = () => {
           </p>
         </div>
         <div className="login--input">
-          <input className="login--input__email" type="email" placeholder="Email" /> <br /> <br />
-          <input className="login--input__password" type="password" placeholder="Password" />
+          <div style={{ position: "relative" }}>
+            <img
+              style={{ position: "absolute", left: "20px", top: "32px" }}
+              className="email"
+              src={email}
+              alt="email"
+            />
+          </div>
+          <input
+            className="login--input__email"
+            type="email"
+            placeholder="Email"
+          />{" "}
+          <br /> <br />
+          <div style={{ position: "relative" }}>
+            <img
+              style={{ position: "absolute", left: "20px", top: "32px" }}
+              className="lock"
+              src={lock}
+              alt="lock"
+            />
+          </div>
+          <input
+            className="login--input__password"
+            type="password"
+            placeholder="Password"
+          />
         </div>
         <div className="login--button">
           <button className="login--button__code">Start coding now</button>
@@ -28,6 +55,29 @@ const LoginForm = () => {
             or continue with these social profile
           </p>
         </div>
+      </div>
+      <div className="members--login">
+        <div className="social--media__login">
+          <i
+            className="fab fa-google google__login"
+            style={{ fontSize: "24px" }}
+          ></i>
+          <i
+            className="fab fa-twitter-square twitter__login"
+            style={{ fontSize: "24px" }}
+          ></i>
+          <i
+            className="fab fa-facebook-square facebook__login"
+            style={{ fontSize: "24px" }}
+          ></i>
+          <i
+            className="fab fa-github github__login"
+            style={{ fontSize: "24px" }}
+          ></i>
+        </div>
+        <p>
+          Already a member? <a href="https://techstackmedia.com">Login</a>
+        </p>
       </div>
       <div className="login-footer">
         <div>
@@ -40,7 +90,7 @@ const LoginForm = () => {
             <a href="#top">devChallenges.io </a>
           </p>
         </div>
-      </div>
+      </div> 
     </section>
   );
 };
