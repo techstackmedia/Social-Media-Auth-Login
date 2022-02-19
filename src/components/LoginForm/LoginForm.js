@@ -60,19 +60,19 @@ const LoginForm = () => {
         <div className="social--media__login">
           <i
             className="fab fa-google google__login"
-            style={{ fontSize: "24px" }}
+            style={{ fontSize: "18px" }}
           ></i>
           <i
             className="fab fa-twitter-square twitter__login"
-            style={{ fontSize: "24px" }}
+            style={{ fontSize: "18px" }}
           ></i>
           <i
             className="fab fa-facebook-square facebook__login"
-            style={{ fontSize: "24px" }}
+            style={{ fontSize: "18px" }}
           ></i>
           <i
             className="fab fa-github github__login"
-            style={{ fontSize: "24px" }}
+            style={{ fontSize: "18px" }}
           ></i>
         </div>
         <p>
@@ -80,9 +80,9 @@ const LoginForm = () => {
         </p>
       </div>
       <div className="login-footer">
-        <div>
+        <div className="login-absolute">
           <p>
-            Created by <a href="#top">username</a>
+            created by <a href="#top">username</a>
           </p>
         </div>
         <div>
@@ -90,7 +90,7 @@ const LoginForm = () => {
             <a href="#top">devChallenges.io </a>
           </p>
         </div>
-      </div> 
+      </div>
     </section>
   );
 };

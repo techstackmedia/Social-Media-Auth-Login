@@ -45,6 +45,7 @@ body {
   border: 1px solid #bdbdbd;
   height: 48px;
   text-indent: 55px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .login--input__email,
@@ -102,8 +103,7 @@ body {
 .social--media__login {
   position: relative;
   top: -18px;
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 }
 
 .github__login,
@@ -114,6 +114,7 @@ body {
   border: 1px solid;
   border-radius: 50%; 
   padding: 8px;
+  margin: 0 10px
 }
 
 @media (max-width: 1130px) {
